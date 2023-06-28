@@ -1,0 +1,16 @@
+{
+  "name": "@hitechline/prettier-config",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "files": [
+    "src",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "directory": "packages/prettier-config",
+    "url": "git+https://github.com/hitechline/hitl-packages.git"
+  }
+}
