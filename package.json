@@ -15,7 +15,6 @@
     "build:all": "nx run-many --target=build",
     "build:since": "nx affected --target=build",
     "version": "lerna version --yes --conventional-commits --create-release github",
-    "prepublishOnly": "npm run build:since",
     "publish": "lerna publish from-git --yes"
   },
   "repository": {

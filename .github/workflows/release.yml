@@ -35,5 +35,8 @@ jobs:
       - name: Create versions and releases
         run: npm run version
 
+      - name: Build packages
+        run: npm run build:all
+
       - name: Publish to github packages
         run: npm run publish
