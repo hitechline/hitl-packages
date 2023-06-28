@@ -22,3 +22,7 @@ npm config set @hitechline:registry https://npm.pkg.github.com/
 ```
 
 6. Congratulations! Now you can use private libraries.
+
+```bash
+npm install @hitechline/eslint-config
+```
