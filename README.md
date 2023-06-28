@@ -1,6 +1,6 @@
 # Hitechline Packages
 
-Libraries used for development at Hitechline
+Libraries used for development at Hitechline.
 
 ## How to use
 
