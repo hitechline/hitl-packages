@@ -6,6 +6,13 @@
   "workspaces": [
     "packages/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitechline/hitl-packages.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
     "fix": "npm run format:fix && npm run lint:fix",
     "lint": "eslint ./ --ext \"js,jsx,ts,tsx\"",
@@ -16,13 +23,6 @@
     "build:since": "nx affected --target=build",
     "version": "lerna version --yes --conventional-commits --create-release github",
     "publish": "lerna publish from-git --yes"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hitechline/hitl-packages.git"
-  },
-  "engines": {
-    "node": ">=14"
   },
   "devDependencies": {
     "@hitechline/eslint-config": "*",
