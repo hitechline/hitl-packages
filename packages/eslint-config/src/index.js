@@ -1,4 +1,1 @@
-module.exports = {
-  node: {},
-  react: {},
-};
+module.exports = {};
