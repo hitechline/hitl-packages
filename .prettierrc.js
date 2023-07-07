@@ -1,6 +1,1 @@
-module.exports = {
-  trailingComma: 'all',
-  arrowParens: 'avoid',
-  quoteProps: 'consistent',
-  singleQuote: true,
-};
+module.exports = require('@hitechline/prettier-config');
