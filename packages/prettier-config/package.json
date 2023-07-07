@@ -12,8 +12,5 @@
     "type": "git",
     "directory": "packages/prettier-config",
     "url": "git+https://github.com/hitechline/hitl-packages.git"
-  },
-  "dependencies": {
-    "prettier": "^2.8.8"
   }
 }

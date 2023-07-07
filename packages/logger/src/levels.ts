@@ -1,4 +1,4 @@
-import { Level, type LevelContext } from './types';
+import { Level, LevelContext } from './types';
 
 export const Levels: Record<Level, Readonly<LevelContext>> = {
   [Level.Success]: { color: 'green', method: 'info', name: 'success' },

@@ -6,9 +6,9 @@
   "module": "src/index.js",
   "exports": {
     ".": "./src/index.js",
-    "./node": "./src/node.js",
-    "./react": "./src/react.js",
-    "./next": "./src/next.js"
+    "./node": "./src/config/node.js",
+    "./react": "./src/config/react.js",
+    "./typescript": "./src/config/typescript.js"
   },
   "files": [
     "src",
@@ -19,19 +19,32 @@
     "directory": "packages/eslint-config",
     "url": "git+https://github.com/hitechline/hitl-packages.git"
   },
-  "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.7",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
-    "eslint": "^8.43.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-import-resolver-typescript": "^3.5.5",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=4.3.0",
+    "@typescript-eslint/parser": ">=4.3.0",
+    "eslint": ">=7.10.0",
+    "eslint-config-airbnb": ">=18.1.0",
+    "eslint-config-airbnb-base": ">=14.1.0",
+    "eslint-config-prettier": ">=6.11.0",
+    "eslint-import-resolver-typescript": ">=2.1.0",
+    "eslint-plugin-import": ">=2.20.2",
+    "eslint-plugin-jsx-a11y": ">=6.3.0",
+    "eslint-plugin-prettier": ">=3.1.3",
+    "eslint-plugin-react": ">=7.21.0",
+    "eslint-plugin-react-hooks": ">=4.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "1.3.3",
+    "@typescript-eslint/eslint-plugin": "5.36.2",
+    "@typescript-eslint/parser": "5.36.2",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.5.2",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0"
   }
 }

@@ -1,4 +1,4 @@
-import type { Colorette } from 'colorette';
+import { Colorette } from 'colorette';
 
 export type Method = 'debug' | 'error' | 'info' | 'trace' | 'warn';
 
