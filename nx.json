@@ -2,7 +2,7 @@
   "npmScope": "hitechline",
   "extends": "nx/presets/npm.json",
   "affected": {
-    "defaultBase": "main"
+    "defaultBase": "release"
   },
   "workspaceLayout": {
     "libsDir": "packages"
