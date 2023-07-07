@@ -1,8 +1,9 @@
+import type { LevelContext } from './types';
+
 import { Console } from 'node:console';
 import { format, inspect } from 'node:util';
 
 import { colors } from './colors';
-import type { LevelContext } from './types';
 
 const { gray, white } = colors;
 
