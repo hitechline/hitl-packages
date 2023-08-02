@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist", "typings", "coverage"],
+  "include": ["**/*.js", "**/.eslintrc.js"],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  }
+}

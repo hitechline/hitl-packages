@@ -1,0 +1,43 @@
+{
+  "name": "@hitechline/reactools",
+  "version": "0.0.0",
+  "description": "",
+  "types": "typings/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "clean": "rimraf dist typings",
+    "build": "run-s clean \"build:{types,files}\"",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build:files": "node esbuild.config.js"
+  },
+  "files": [
+    "dist",
+    "typings"
+  ],
+  "repository": {
+    "type": "git",
+    "directory": "packages/reactools",
+    "url": "git+https://github.com/hitechline/hitl-packages.git"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "dependencies": {
+    "fast-glob": "3.2.11"
+  },
+  "devDependencies": {
+    "@testing-library/react": "11.2.7",
+    "@testing-library/react-hooks": "7.0.2",
+    "@types/react": "17.0.40",
+    "@types/react-dom": "17.0.13",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-test-renderer": "17.0.2",
+    "tsc-alias": "1.3.9"
+  }
+}
