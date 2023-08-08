@@ -1,8 +1,9 @@
-import { mergeClassNames } from '@hitechline/reactools';
+import type { WizardStepsProps } from '../types';
+
+import { clsx } from 'clsx';
 import { useEffect } from 'react';
 
 import { useWizard } from '../hooks/useWizard';
-import type { WizardStepsProps } from '../types';
 
 export const WizardSteps = ({
   children,
@@ -16,7 +17,7 @@ export const WizardSteps = ({
   }, [children, registerSteps]);
 
   return (
-    <div {...props} className={mergeClassNames('wizard-steps', className)}>
+    <div {...props} className={clsx('wizard-steps', className)}>
       {getStep(current)}
     </div>
   );

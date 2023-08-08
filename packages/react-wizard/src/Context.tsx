@@ -1,3 +1,5 @@
+import type { WizardContextData, WizardProviderProps } from './types';
+
 import {
   Children,
   createContext,
@@ -6,8 +8,6 @@ import {
   useCallback,
   ReactNode,
 } from 'react';
-
-import type { WizardContextData, WizardProviderProps } from './types';
 
 export const WizardContext = createContext<WizardContextData>(
   {} as WizardContextData,

@@ -10,24 +10,18 @@
     "typings",
     "package.json"
   ],
-  "scripts": {
-    "clean": "rimraf dist typings",
-    "build": "run-s clean \"build:{types,files}\"",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build:files": "node esbuild.config.js"
-  },
   "repository": {
     "type": "git",
     "directory": "packages/react-wizard",
     "url": "git+https://github.com/hitechline/hitl-packages.git"
   },
-  "keywords": [
-    "react",
-    "steps",
-    "wizard"
-  ],
-  "engines": {
-    "node": ">=12"
+  "scripts": {
+    "clean": "rimraf dist typings",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build:check": "tsc --noEmit",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "run-s clean \"build:{check,types,files,cjs,esm}\""
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0",
@@ -36,7 +30,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
-    "@hitechline/reactools": "*"
+    "clsx": "^2.0.0"
   },
   "devDependencies": {
     "@types/react": "17.0.43",

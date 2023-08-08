@@ -1,7 +1,8 @@
-import { mergeClassNames } from '@hitechline/reactools';
+import type { WizardProps } from '../types';
+
+import { clsx } from 'clsx';
 
 import { WizardProvider } from '../Context';
-import type { WizardProps } from '../types';
 
 export const Wizard = ({
   children,
@@ -9,7 +10,7 @@ export const Wizard = ({
   ...props
 }: WizardProps): JSX.Element => (
   <WizardProvider>
-    <div {...props} className={mergeClassNames('wizard', className)}>
+    <div {...props} className={clsx('wizard', className)}>
       {children}
     </div>
   </WizardProvider>

@@ -1,8 +1,9 @@
-import { mergeClassNames } from '@hitechline/reactools';
+import type { HeaderProps } from '../../types';
+
+import { clsx } from 'clsx';
 import { useMemo, useCallback } from 'react';
 
 import { useWizard } from '../../hooks/useWizard';
-import type { HeaderProps } from '../../types';
 import { Container, Part, Name } from './styles';
 
 export const Header = ({
@@ -33,14 +34,11 @@ export const Header = ({
   );
 
   return (
-    <Container
-      {...props}
-      className={mergeClassNames('wizard-header', className)}
-    >
+    <Container {...props} className={clsx('wizard-header', className)}>
       {data.map(({ title, element, index, indexSum }) => (
         <Part
           key={indexSum}
-          className={mergeClassNames({
+          className={clsx({
             active: hasActive(index),
             selected: hasSelected(index),
           })}

@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.build.json",
-  "compilerOptions": {
-    "outDir": "../typings",
-    "declarationDir": "../typings",
-    "declaration": true,
-    "emitDeclarationOnly": true
-  }
-}
